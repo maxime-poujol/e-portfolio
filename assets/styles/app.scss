@@ -1,0 +1,14 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import "customStyles";
+
+$blueColor : #294be0;
+$gradient: linear-gradient(to right, #f6b73c, #4d9f0c) 50;
+
+:root{
+  --blueC : #294be0;
+}
+
+.border-bottom-color{
+  border-image: $gradient;
+}

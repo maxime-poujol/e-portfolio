@@ -15,13 +15,24 @@ class DefaultController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function index(Request $request): Response
+    public function homepageAction(Request $request): Response
     {
 
-        $locale=$request->getLocale();
+        return $this->render('default/home.html.twig', [
 
-        return $this->render('default/index.html.twig', [
-            'controller_name' => 'DefaultController',
+        ]);
+    }
+
+    /**
+     * @Route("/my-journey", name="journey")
+     * @param Request $request
+     * @return Response
+     */
+    public function journeyAction(Request $request): Response
+    {
+
+        return $this->render('default/journey.html.twig', [
+
         ]);
     }
 
