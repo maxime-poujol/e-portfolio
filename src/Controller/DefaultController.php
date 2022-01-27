@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class DefaultController extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/", name="homepage")
      * @param Request $request
      * @return Response
      */
@@ -24,7 +24,7 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/my-journey", name="journey")
+     * @Route("/e-portfolio", name="eportfolio")
      * @param Request $request
      * @return Response
      */
@@ -32,7 +32,7 @@ class DefaultController extends AbstractController
     {
 
         return $this->render('default/journey.html.twig', [
-
+            "age" => date_diff(date_create('2001-09-21'), date_create())->format('%Y%')
         ]);
     }
 

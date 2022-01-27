@@ -2,13 +2,56 @@
 @import "~bootstrap/scss/bootstrap";
 @import "customStyles";
 
-$blueColor : #294be0;
-$gradient: linear-gradient(to right, #f6b73c, #4d9f0c) 50;
+@font-face{
+  font-family: 'maxinfo';
+  src: url("./fonts/maxinfo/maxinfo.ttf");
+  font-style: normal;
+}
+
 
 :root{
-  --blueC : #294be0;
+  --color-1 : #5499c7;
+  --color-2 : #45b39d;
+  --border-btm-color: linear-gradient(to right, var(--color-1), var(--color-2) 100%);
+}
+
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+
+$gradient: linear-gradient(to right, $color-1 , $color-2 100%);
+
+
+.text-justify{
+  text-align: justify;
+}
+
+
+
+.bg-img-homepage{
+  background-image: url('/public/img/pictures/homepage-welcome-reduce.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  width: 100%;
 }
 
 .border-bottom-color{
-  border-image: $gradient;
+  border-image: $gradient 50;
+}
+
+.bg-color{
+  background-image: $gradient;
+}
+
+.btn-1{
+  color: white;
+  background-color: $color-1;
+  border-color: $color-1;
+}
+
+.btn-2{
+  color: white;
+  background-color: $color-2;
+  border-color: $color-2;
 }
