@@ -1,6 +1,4 @@
-const $ = require('jquery');
-
-$(() => {
+function start($) {
 
     // Move to specific section when click on menu link
     $('#scrollspy a.dot').on('click', function (e) {
@@ -26,4 +24,8 @@ $(() => {
         });
     });
 
-});
+}
+
+module.exports = {
+    start
+}

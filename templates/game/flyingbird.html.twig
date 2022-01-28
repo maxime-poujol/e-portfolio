@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block header %}
+    <h1> Flying Bird</h1>
+    <div class="d-flex">
+        <div id="bestScore"></div>
+        <div id="currentScore"></div>
+    </div>
+{% endblock %}
+
+
+{% block body %}
+<div class="m-auto w-100 d-flex justify-content-center align-items-center">
+    <canvas id="canvas"></canvas>
+</div>
+
+
+    <script src="{{ asset('js/game/flyingbird/flyingbirdGame.js') }}" type="module"></script>
+
+{% endblock %}
