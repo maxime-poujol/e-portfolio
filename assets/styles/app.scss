@@ -44,6 +44,10 @@ $gradient: linear-gradient(to right, $color-1 , $color-2 100%);
   background-image: $gradient;
 }
 
+.color-white{
+  color: white;
+}
+
 .btn-1{
   color: white;
   background-color: $color-1;
