@@ -83,7 +83,7 @@
         },
         "post-install-cmd": [
             "@auto-scripts"
-        ],
+        ]
 
     },
     "conflict": {
