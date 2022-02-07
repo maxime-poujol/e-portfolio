@@ -1,11 +1,8 @@
-import {Bird} from "./bird";
-
-export class Canvas {
+class Canvas {
 
     /**
      *
      * @param {String} theme
-     * @param bird
      */
     constructor(theme = 'default') {
 

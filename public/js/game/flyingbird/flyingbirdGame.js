@@ -1,8 +1,4 @@
-import {Canvas} from './canvas.js';
-
 let canvas = new Canvas();
-
-
 
 const pipeTop = new Image();
 pipeTop.src = '/img/game/flyingbird/default/pipe-top.png';
