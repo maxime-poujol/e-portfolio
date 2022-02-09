@@ -45,7 +45,15 @@ class DefaultController extends AbstractController
      */
     public function changeLocal(Request $request):Response
     {
+
+        //$request->getSession()->set('_locale', $locale);
+        var_dump($request->getLocale());
         return $this->redirect($request->headers->get('referer'));
+
+        //dump($request->headers->get('referer'));
+        //die();
+        //return $this->render('default/journey.html.twig');
+
     }
 
 }

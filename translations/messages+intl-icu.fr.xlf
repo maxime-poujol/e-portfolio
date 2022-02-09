@@ -9,6 +9,10 @@
         <source>Diploma and Training</source>
         <target>Diplôme et expérience</target>
       </trans-unit>
+      <trans-unit id="avKMxwS" resname="e-portfolio.diploma">
+        <source>Diploma and Training</source>
+        <target>Diplôme et expérience</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
