@@ -24,7 +24,7 @@
                     {% for locale in locales %}
                         {% if locale != app.request.locale %}
                             <li class="nav-item">
-                                <a href="{{ path('change_locale', {'locale': locale}) }}">{{ locale }}</a>
+                                <a href="{{ path('change_locale', {'_locale': locale}) }}">{{ locale }}</a>
                             </li>
                         {% endif %}
                     {% endfor %}

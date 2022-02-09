@@ -46,7 +46,7 @@
                     </div>
                     <div class="col-9 d-flex flex-column justify-content-center">
                         <h1>Welcome to my e-portfolio</h1>
-                        <p class="text-justify">My name is <u>Maxime POUJOL</u>. I am {{ age }} years old. Let me tell
+                        <p class="text-justify">My name is <u>Maxime POUJOL</u>. I am {{ age | default("20") }} years old. Let me tell
                             you how it all began.
                             When I was young, I played video games on consoles such as Playstation 2, my first game
                             console, and then Playstation 3.
@@ -73,7 +73,7 @@
         <section id="diplomaAndTrainig" class="py-5 bg-color">
             <div class="container color-white">
                 <div class="text-center py-1">
-                    <h2>Diploma and Training</h2>
+                    <h2>{{  'Diploma and Training' | trans }}</h2>
                 </div>
                 <div>
                     <h3 class="h4"><u>High school </u></h3>

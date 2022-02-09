@@ -37,21 +37,19 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/change-locale/{locale}", name="change_locale", requirements={"locale"="en|fr"}))
+     * @Route("/change-locale/{_locale}", name="change_locale", requirements={"_locale"="en|fr"}))
      *
-     * @param string $locale
      * @param Request $request
      *
      * @return Response
      */
-    public function changeLocal(string $locale, Request $request):Response
+    public function changeLocal(Request $request):Response
     {
 
-        // On stocke la langue dans la session
-        $request->getSession()->set('_locale', $locale);
+        //$request->getSession()->set('_locale', $locale);
+        //return $this->redirect($request->headers->get('referer'));
 
-        // On revient sur la page précédente
-        return $this->redirect($request->headers->get('referer'));
+        return $this->render('default/journey.html.twig');
 
     }
 
