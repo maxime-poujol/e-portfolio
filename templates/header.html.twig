@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-light px-md-3">
+<nav id="navbar" class="navbar navbar-expand-md navbar-light px-md-3">
     <div class="container-fluid">
         <div class="navbar-brand">
             Maxinfo
@@ -24,7 +24,7 @@
                     {% for locale in locales %}
                         {% if locale != app.request.locale %}
                             <li class="nav-item">
-                                <a href="{{ path('change_locale', {'_locale': locale}) }}">{{ locale }}</a>
+                                <a class="nav-link" href="{{ path('change_locale', {'_locale': locale}) }}">{{ locale }}</a>
                             </li>
                         {% endif %}
                     {% endfor %}

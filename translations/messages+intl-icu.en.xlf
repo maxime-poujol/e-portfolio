@@ -1,18 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
-    <header>
-      <tool tool-id="symfony" tool-name="Symfony"/>
-    </header>
-    <body>
-      <trans-unit id="avKMxwS" resname="e-portfolio.diploma">
-        <source>e-portfolio.diploma</source>
-        <target>__e-portfolio.diploma</target>
-      </trans-unit>
-      <trans-unit id="ZvukwbQ" resname="Diploma and Training">
-        <source>Diploma and Training</source>
-        <target>__Diploma and Training</target>
-      </trans-unit>
-    </body>
-  </file>
+    <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+        <header>
+            <tool tool-id="symfony" tool-name="Symfony"/>
+        </header>
+        <body>
+            <trans-unit id="j.BHi8r" resname="e-portfolio.h1.title">
+                <source>e-portfolio.h1.title</source>
+                <target>
+                    Welcome to my e-portfolio
+                </target>
+            </trans-unit>
+            <trans-unit id="s1xr73Y" resname="e-portfolio.h1.description">
+                <source>e-portfolio.h1.description</source>
+                <target>
+                    My name is {name}. I am { age } years old.
+                    Let me tell you how it all began.
+                    When I was young, I played video games on consoles such as Playstation 2, my first game console, and
+                    then Playstation 3.
+                    My father, who likes video games too, bought a gaming laptop.
+                    He told me that the laptop is better for playing and that it was the future
+                    because we can do more things.
+                    One day, he made me try his favorite games and I remember how much I loved.
+                    From that day, I bought my first desktop PC and I started to take an interest in computers,
+                    both hardware and development.
+                </target>
+            </trans-unit>
+            <trans-unit id="uW997Nh" resname="e-portfolio.h2.diplome.title">
+                <source>e-portfolio.h2.diplome.title</source>
+                <target>__e-portfolio.h2.diplome.title</target>
+            </trans-unit>
+            <trans-unit id="318bY0R" resname="e-portfolio.h1.btn.cv">
+                <source>e-portfolio.h1.btn.cv</source>
+                <target>__e-portfolio.h1.btn.cv</target>
+            </trans-unit>
+            <trans-unit id="T9NFST0" resname="e-portfolio.h1.btn.contact">
+                <source>e-portfolio.h1.btn.contact</source>
+                <target>__e-portfolio.h1.btn.contact</target>
+            </trans-unit>
+            <trans-unit id="6fre2qK" resname="e-portfolio.h3.diplome.subtitle">
+                <source>e-portfolio.h3.diplome.subtitle</source>
+                <target>__e-portfolio.h3.diplome.subtitle</target>
+            </trans-unit>
+            <trans-unit id="D0ZC3XC" resname="e-portfolio.h3.diplome.description">
+                <source>e-portfolio.h3.diplome.description</source>
+                <target>I studied at the high school called Jean Jaurès in Saint Clément de Rivière near Montpellier,
+                    in south of France from septembre 2016 to juin 2019.
+                </target>
+            </trans-unit>
+            <trans-unit id="D_aWaDF" resname="e-portfolio.diplome.title">
+                <source>e-portfolio.diplome.title</source>
+                <target>__e-portfolio.diplome.title</target>
+            </trans-unit>
+            <trans-unit id="16aQE6L" resname="e-portfolio.diplome.college.title">
+                <source>e-portfolio.diplome.college.title</source>
+                <target>__e-portfolio.diplome.college.title</target>
+            </trans-unit>
+            <trans-unit id="bd.tnQn" resname="e-portfolio.diplome.college.lieu">
+                <source>e-portfolio.diplome.college.lieu</source>
+                <target>__e-portfolio.diplome.college.lieu</target>
+            </trans-unit>
+            <trans-unit id="DIdF_OX" resname="e-portfolio.diplome.college.planning">
+                <source>e-portfolio.diplome.college.planning</source>
+                <target>__e-portfolio.diplome.college.planning</target>
+            </trans-unit>
+            <trans-unit id="A3ut.d3" resname="e-portfolio.diplome.lycee.title">
+                <source>e-portfolio.diplome.lycee.title</source>
+                <target>__e-portfolio.diplome.lycee.title</target>
+            </trans-unit>
+            <trans-unit id="sV.APcn" resname="e-portfolio.diplome.lycee.lieu">
+                <source>e-portfolio.diplome.lycee.lieu</source>
+                <target>__e-portfolio.diplome.lycee.lieu</target>
+            </trans-unit>
+            <trans-unit id="GQzAOU6" resname="e-portfolio.diplome.lycee.planning">
+                <source>e-portfolio.diplome.lycee.planning</source>
+                <target>__e-portfolio.diplome.lycee.planning</target>
+            </trans-unit>
+            <trans-unit id="I0_qW_s" resname="e-portfolio.diplome.dut.title">
+                <source>e-portfolio.diplome.dut.title</source>
+                <target>__e-portfolio.diplome.dut.title</target>
+            </trans-unit>
+            <trans-unit id=".0lSOc9" resname="e-portfolio.diplome.dut.lieu">
+                <source>e-portfolio.diplome.dut.lieu</source>
+                <target>__e-portfolio.diplome.dut.lieu</target>
+            </trans-unit>
+            <trans-unit id="xBmanqx" resname="e-portfolio.diplome.dut.planning">
+                <source>e-portfolio.diplome.dut.planning</source>
+                <target>__e-portfolio.diplome.dut.planning</target>
+            </trans-unit>
+            <trans-unit id="4ze6zBw" resname="e-portfolio.diplome.lp.title">
+                <source>e-portfolio.diplome.lp.title</source>
+                <target>__e-portfolio.diplome.lp.title</target>
+            </trans-unit>
+            <trans-unit id="GLXVndP" resname="e-portfolio.diplome.lp.lieu">
+                <source>e-portfolio.diplome.lp.lieu</source>
+                <target>__e-portfolio.diplome.lp.lieu</target>
+            </trans-unit>
+            <trans-unit id="wYXJw1H" resname="e-portfolio.diplome.lp.planning">
+                <source>e-portfolio.diplome.lp.planning</source>
+                <target>__e-portfolio.diplome.lp.planning</target>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>

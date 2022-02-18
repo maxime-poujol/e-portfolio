@@ -7,7 +7,7 @@
         <ul class="nav-menu m-0 p-0">
             <li>
                 <a data-scroll="diplomaAndTrainig" href="#diplomaAndTrainig" class="dot">
-                    <span> {{  'e-portfolio.diploma' | trans }}</span>
+                    <span> {{ 'e-portfolio.diplome.title' | trans }}</span>
                 </a>
             </li>
             <li>
@@ -45,56 +45,110 @@
                         <img src="{{ asset('img/pictures/profil.jpeg') }}" width="100%" class="rounded-circle" alt="">
                     </div>
                     <div class="col-9 d-flex flex-column justify-content-center">
-                        <h1>Welcome to my e-portfolio</h1>
-                        <p class="text-justify">My name is <u>Maxime POUJOL</u>. I am {{ age | default("20") }} years old. Let me tell
-                            you how it all began.
-                            When I was young, I played video games on consoles such as Playstation 2, my first game
-                            console, and then Playstation 3.
-                            My father, who likes video games too, bought a gaming laptop.
-                            He told me that the laptop is better for playing video games and that it was the future
-                            because we can do more things.
-                            One day, he made me try his favorite games on his laptop and I remember how much I loved.
-                            From that day, I bought my first desktop PC and I started to take an interest in computers,
-                            both hardware and development.
+                        <h1 class="bg-color" style="background-clip: text; color: rgba(0, 0, 0, 0) ">{{ 'e-portfolio.h1.title' | trans }}</h1>
+                        <p class="text-justify">
+                            {{ 'e-portfolio.h1.description' | trans({'name': '<u>Maxime POUJOL</u>', 'age': age}) | raw }}
                         </p>
-
-                        {# //TODO web dev #}
-
                         <div class="text-center">
-                            <a class="btn btn-1 mx-3 rounded-pill">Download my CV</a>
-                            <a class="btn btn-2 mx-3 rounded-pill">Contact me</a>
+                            <a class="btn btn-1 mx-3 rounded-pill">{{ 'e-portfolio.h1.btn.cv' | trans }}</a>
+                            <a class="btn btn-2 mx-3 rounded-pill">{{ 'e-portfolio.h1.btn.contact' | trans }}</a>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
         <section id="diplomaAndTrainig" class="py-5 bg-color">
             <div class="container color-white">
-                <div class="text-center py-1">
-                    <h2>{{  'Diploma and Training' | trans }}</h2>
+                <div class="text-center py-4">
+                    <h2>{{ 'e-portfolio.diplome.title' | trans }}</h2>
                 </div>
-                <div>
-                    <h3 class="h4"><u>High school </u></h3>
+                <div class="py-2">
+                    <h3 class="h4 fw-normal">
+                        {{ 'e-portfolio.diplome.college.title' | trans }}
+                    </h3>
                     <div class="container">
-                        <p>I studied at the high school called Jean Jaurès in Saint Clément de Rivière near Montpellier,
-                            in south of France from septembre 2016 to juin 2019. </p>
+                        <div class="mx-3">
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#geo"/>
+                                </svg>
+                                {{ 'e-portfolio.diplome.college.lieu' | trans }}
+                            </div>
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#planning"/>
+                                </svg>
+                                {% set dateDebut = ("2012-09-3" | format_date) %}
+                                {% set dateFin = ("2016-07-4" | format_date) %}
+                                {{ 'e-portfolio.diplome.college.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-                <div>
-                    <h3 class="h4"><u>DUT Informatique</u></h3>
+                <div class="py-2">
+                    <h3 class="h4 fw-normal">
+                        {{ 'e-portfolio.diplome.lycee.title' | trans }}
+                    </h3>
                     <div class="container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
-                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                        <div class="mx-3">
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#geo"/>
+                                </svg>
+                                {{ 'e-portfolio.diplome.lycee.lieu' | trans }}
+                            </div>
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#planning"/>
+                                </svg>
+                                {% set dateDebut = ("2016-09-5" | format_date) %}
+                                {% set dateFin = ("2019-07-8" | format_date) %}
+                                {{ 'e-portfolio.diplome.lycee.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-                <div>
-                    <h3 class="h4"><u>LP ADIPAE</u></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
-                        dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                <div class="py-2">
+                    <h3 class="h4 fw-normal">{{ 'e-portfolio.diplome.dut.title' | trans }}</h3>
+                    <div class="container">
+                        <div class="mx-3">
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#geo"/>
+                                </svg>
+                                {{ 'e-portfolio.diplome.dut.lieu' | trans }}
+                            </div>
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#planning"/>
+                                </svg>
+                                {% set dateDebut = ("2019-09-2" | format_date) %}
+                                {% set dateFin = ("2021-06-28" | format_date) %}
+                                {{ 'e-portfolio.diplome.dut.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <h3 class="h4 fw-normal fw-normal">{{ 'e-portfolio.diplome.lp.title' | trans }}</h3>
+                    <div class="container">
+                        <div class="mx-3">
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#geo"/>
+                                </svg>
+                                {{ 'e-portfolio.diplome.lp.lieu' | trans }}
+                            </div>
+                            <div class="p-1">
+                                <svg width="20" height="20" fill="red" class="me-1">
+                                    <use xlink:href="#planning"/>
+                                </svg>
+                                {% set dateDebut = ("2021-09-20" | format_date) %}
+                                {% set dateFin = ("now" | format_date) %}
+                                {{ 'e-portfolio.diplome.lp.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
