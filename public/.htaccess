@@ -20,6 +20,18 @@ DirectoryIndex index.php
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    RewriteCond %{HTTP:Accept-Language} ^fr.*$ [NC]
+    RewriteRule ^$ /fr [L, R=302]
+
+    RewriteCond %{HTTP:Accept-Language} ^en.*$ [NC]
+    RewriteRule ^$ /en [L, R=302]
+
+    RewriteCond %{HTTP:Accept-Language} ^.*$ [NC]
+    RewriteRule ^$ /fr [L, R=302]
+
+
+
+
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the
     # project in a subdirectory, the base path will be prepended to allow proper
