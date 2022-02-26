@@ -31,7 +31,7 @@ class DefaultController extends AbstractController
     public function journeyAction(Request $request): Response
     {
 
-        return $this->render('default/journey.html.twig', [
+        return $this->render('default/ePortfolio.html.twig', [
             "age" => date_diff(date_create('2001-09-21'), date_create())->format('%Y%')
         ]);
     }
@@ -52,7 +52,7 @@ class DefaultController extends AbstractController
 
         //dump($request->headers->get('referer'));
         //die();
-        //return $this->render('default/journey.html.twig');
+        //return $this->render('default/ePortfolio.html.twig');
 
     }
 

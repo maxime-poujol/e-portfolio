@@ -1,0 +1,281 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/e-portfolio.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div>
+
+        <div class="bg-img-top">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                <h1 class="bg-color-txt">E-Portfolio</h1>
+            </div>
+        </div>
+        <nav id="scrollspy" class="scrollspy position-fixed d-lg-flex d-none top-50">
+            <ul class="nav-menu m-0 p-0">
+                <li>
+                    <a data-scroll="diplomaAndTrainig" href="#diplomaAndTrainig" class="dot">
+                        <span> {{ 'e-portfolio.diplome.title' | trans }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="experiencies" href="#experiencies" class="dot">
+                        <span>Experiencies</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="events" href="#events" class="dot">
+                        <span>Events</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="langageFrameworkApi" href="#langageFrameworkApi" class="dot">
+                        <span>langageFrameworkApi</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="hobies" href="#hobies" class="dot">
+                        <span>hobies</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="contact" href="#contact" class="dot">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="my-3">
+            <section class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 p-3">
+                            <img src="{{ asset('img/pictures/profil.jpeg') }}" width="100%" class="rounded-circle"
+                                 alt="">
+                        </div>
+                        <div class="col-9 d-flex flex-column justify-content-center">
+                            <h2 class="bg-color-txt">{{ 'e-portfolio.h1.title' | trans }}</h2>
+                            <p class="text-justify">
+                                {{ 'e-portfolio.h1.description' | trans({'name': '<u>Maxime POUJOL</u>', 'age': age}) | raw }}
+                            </p>
+                            <div class="text-center">
+                                <a class="btn btn-1 mx-3 rounded-pill">{{ 'e-portfolio.h1.btn.cv' | trans }}</a>
+                                <a class="btn btn-2 mx-3 rounded-pill">{{ 'e-portfolio.h1.btn.contact' | trans }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="diplomaAndTrainig" class="py-5 bg-color">
+                <div class="container color-white">
+                    <div class="text-center py-4">
+                        <h2>{{ 'e-portfolio.diplome.title' | trans }}</h2>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="h4 fw-normal">
+                            {{ 'e-portfolio.diplome.college.title' | trans }}
+                        </h3>
+                        <div class="container">
+                            <div class="mx-3">
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#geo"/>
+                                    </svg>
+                                    {{ 'e-portfolio.diplome.college.lieu' | trans }}
+                                </div>
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#planning"/>
+                                    </svg>
+                                    {% set dateDebut = ("2012-09-3" | format_date) %}
+                                    {% set dateFin = ("2016-07-4" | format_date) %}
+                                    {{ 'e-portfolio.diplome.college.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="h4 fw-normal">
+                            {{ 'e-portfolio.diplome.lycee.title' | trans }}
+                        </h3>
+                        <div class="container">
+                            <div class="mx-3">
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#geo"/>
+                                    </svg>
+                                    {{ 'e-portfolio.diplome.lycee.lieu' | trans }}
+                                </div>
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#planning"/>
+                                    </svg>
+                                    {% set dateDebut = ("2016-09-5" | format_date) %}
+                                    {% set dateFin = ("2019-07-8" | format_date) %}
+                                    {{ 'e-portfolio.diplome.lycee.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="h4 fw-normal">{{ 'e-portfolio.diplome.dut.title' | trans }}</h3>
+                        <div class="container">
+                            <div class="mx-3">
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#geo"/>
+                                    </svg>
+                                    {{ 'e-portfolio.diplome.dut.lieu' | trans }}
+                                </div>
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#planning"/>
+                                    </svg>
+                                    {% set dateDebut = ("2019-09-2" | format_date) %}
+                                    {% set dateFin = ("2021-06-28" | format_date) %}
+                                    {{ 'e-portfolio.diplome.dut.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="h4 fw-normal fw-normal">{{ 'e-portfolio.diplome.lp.title' | trans }}</h3>
+                        <div class="container">
+                            <div class="mx-3">
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#geo"/>
+                                    </svg>
+                                    {{ 'e-portfolio.diplome.lp.lieu' | trans }}
+                                </div>
+                                <div class="p-1">
+                                    <svg width="20" height="20" fill="red" class="me-1">
+                                        <use xlink:href="#planning"/>
+                                    </svg>
+                                    {% set dateDebut = ("2021-09-20" | format_date) %}
+                                    {% set dateFin = ("now" | format_date) %}
+                                    {{ 'e-portfolio.diplome.lp.planning' | trans({'dateDebut' : dateDebut, 'dateFin' : dateFin}) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experiencies" class="py-5">
+                <div class="container">
+                    <div class="text-center py-1">
+                        <h2>Experiences</h2>
+                    </div>
+                    <div>
+                        <h3 class="h4"><u>Développeur d'application</u></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
+                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                    </div>
+                    <div>
+                        <h3 class="h4"><u>Développeur d'application</u></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
+                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                    </div>
+                    <div>
+                        <h3 class="h4"><u>LP ADIPAE</u></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
+                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="events" class="py-5">
+                <div class="container">
+                    <div class="content-wrapper text-center">
+                        <div class="content">
+                            <h2>Events</h2>
+                            <p>compelling channels whereas user-centric e-services. Phosfluorescently productivate.</p>
+                            <div class="services">
+                                <div class="service text-left">
+                                    <h4>Service No. (1)</h4>
+                                    <p>Proactively integrate front-end infomediaries before cooperative leadership
+                                        skills.
+                                        Progressively repurpose value-added leadership skills with interactive
+                                        leadership.
+                                        Progressively.</p>
+                                </div>
+                                <div class="service text-right">
+                                    <h4>Service No. (2)</h4>
+                                    <p>Continually extend sustainable e-commerce before reliable metrics. Efficiently
+                                        expedite low-risk high-yield catalysts for change via error-free value.</p>
+                                </div>
+                                <div class="service text-left">
+                                    <h4>Service No. (3)</h4>
+                                    <p>Phosfluorescently syndicate progressive content without principle-centered
+                                        content.
+                                        Seamlessly restore leading-edge web services via cooperative technology.
+                                        Authoritatively maximize.</p>
+                                </div>
+                                <div class="service text-right">
+                                    <h4>Service No. (4)</h4>
+                                    <p>Conveniently scale market-driven schemas before dynamic action items. Quickly
+                                        visualize real-time niche markets vis-a-vis future-proof infomediaries.
+                                        Progressively.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="langageFrameworkApi" class="py-5">
+                <div class="container">
+                    <div class="content-wrapper text-center">
+                        <div class="content">
+                            <h2>langageFrameworkApi</h2>
+                            <p>Monotonectally procrastinate backend interfaces vis-a-vis bricks-and-clicks action
+                                items.</p>
+                            <div class="client">
+                                <p>Collaboratively procrastinate interactive platforms via world-class customer service.
+                                    Uniquely optimize ethical partnerships rather than functional niches.
+                                    Synergistically
+                                    predominate distributed functionalities with exceptional ROI. Continually.</p>
+                                <h4>Ahmed Beheiry</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="hobies" class="py-5">
+                <div class="container">
+                    <div class="content-wrapper text-center">
+                        <div class="content">
+                            <h2>langageFrameworkApi</h2>
+                            <p>Monotonectally procrastinate backend interfaces vis-a-vis bricks-and-clicks action
+                                items.</p>
+                            <div class="client">
+                                <p>Collaboratively procrastinate interactive platforms via world-class customer service.
+                                    Uniquely optimize ethical partnerships rather than functional niches.
+                                    Synergistically
+                                    predominate distributed functionalities with exceptional ROI. Continually.</p>
+                                <h4>Ahmed Beheiry</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="py-5">
+                <div class="container">
+                    <div class="content-wrapper text-center">
+                        <div class="content">
+                            <h2>Contact Me</h2>
+                            <p>disintermediate multimedia based e-markets whereas interoperable value.</p>
+                            <p class="mail">Ahmed_beheiry@yahoo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+{% endblock %}
+
+

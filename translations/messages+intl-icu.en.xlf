@@ -100,6 +100,10 @@
                 <source>e-portfolio.diplome.lp.planning</source>
                 <target>__e-portfolio.diplome.lp.planning</target>
             </trans-unit>
+            <trans-unit id="0">
+                <source>header.home</source>
+                <target>Home</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

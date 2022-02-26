@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class GameController extends AbstractController
 {
     /**
-     * @Route("/", name="games")
+     * @Route("/", name="games_index")
      */
     public function index(): Response
     {
@@ -22,7 +22,7 @@ class GameController extends AbstractController
     }
 
     /**
-     * @Route("/flying-bird", name="games")
+     * @Route("/flying-bird", name="games_flying-bird")
      */
     public function flyingBird(): Response
     {

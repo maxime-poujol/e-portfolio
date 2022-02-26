@@ -20,13 +20,6 @@
             {% endblock %}
         </header>
         <main>
-            {% block backToTop %}
-                <a id="backToTop">
-                    <svg width="50%" height="50%" fill="white">
-                        <use xlink:href="#arrow-up"/>
-                    </svg>
-                </a>
-            {% endblock %}
             {% block body %}{% endblock %}
             {% include 'svg.html.twig' %}
         </main>

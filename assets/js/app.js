@@ -5,17 +5,19 @@ import '../styles/app.scss';
 const $ = require('jquery');
 const bootstrap = require('bootstrap');
 
-star();
 
-function star(){
+start();
+
+function start(){
     if(document.getElementById('scrollspy')){
         scrollpsy();
     }
 
-    backToTop();
+    //backToTop();
     tooltip();
 }
 
+const header = require('./header.js');
 
 
 

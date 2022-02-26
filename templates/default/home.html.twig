@@ -2,12 +2,18 @@
 
 {% block title %}Hello DefaultController!{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}" >
+{% endblock %}
+
 {% block body %}
     <div id="homepage">
-        <div class="bg-img-homepage">
+        <div class="bg-img-top">
             <div class="row w-100 h-100 m-auto">
                 <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
-                    <div class="d-flex flex-column justify-content-center align-items-center d-md-none bg-color rounded-pill py-2 px-4 mx-2" style="color: white">
+                    <div class="d-flex flex-column justify-content-center align-items-center d-md-none bg-color rounded-pill py-2 px-4 mx-2"
+                         style="color: white">
                         <h1>Hi, it's Maxime</h1>
                         <div class="h5">Welcome on my website</div>
                     </div>
@@ -29,8 +35,6 @@
 
             {#
             https://www.freecodecamp.org/news/how-to-create-a-portfolio-website-using-html-css-javascript-and-bootstrap/
-
-
             #}
 
         </div>

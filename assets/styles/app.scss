@@ -1,64 +1,67 @@
-
 @import "~bootstrap/scss/bootstrap";
 @import "customStyles";
 
-@font-face{
+@font-face {
   font-family: 'maxinfo';
   src: url("./fonts/maxinfo/maxinfo.ttf");
   font-style: normal;
 }
 
 
-:root{
-  --color-1 : #5499c7;
-  --color-2 : #45b39d;
+:root {
+  --color-1: #5499c7;
+  --color-2: #45b39d;
   --border-btm-color: linear-gradient(to right, var(--color-1), var(--color-2) 100%);
 }
 
 $color-1: var(--color-1);
 $color-2: var(--color-2);
 
-$gradient: linear-gradient(to right, $color-1 , $color-2 100%);
+$gradient: linear-gradient(to right, $color-1, $color-2 100%);
 
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
 
-
-.bg-img-homepage{
-  background-image: url('/public/img/pictures/homepage-welcome-reduce.jpg');
+.bg-img-top {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   height: 100vh;
   width: 100%;
 }
 
-.border-bottom-color{
+.border-bottom-color {
   border-image: $gradient 50;
 }
 
-.bg-color{
+.bg-color {
   background-image: $gradient;
 }
 
-.color-white{
+.bg-color-txt {
+  background-image: $gradient;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0)
+}
+
+.color-white {
   color: white;
 }
 
-.color-red{
+.color-red {
   color: red;
 }
 
-.btn-1{
+.btn-1 {
   color: white;
   background-color: $color-1;
   border-color: $color-1;
 }
 
-.btn-2{
+.btn-2 {
   color: white;
   background-color: $color-2;
   border-color: $color-2;
