@@ -8,7 +8,7 @@ pipeBot.src = '/img/game/flyingbird/default/pipe-bot.png';
 
 let isPlaying = false;
 const gravity = 0.25;
-const pipeSpeed = 3;
+const pipeSpeed = 2;
 const birdX = 51;
 const birdY = 36;
 const birdJump = -7;
