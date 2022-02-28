@@ -25,22 +25,22 @@
                 </li>
                 <li>
                     <a data-scroll="experiencies" href="#experiencies" class="dot">
-                        <span>Experiencies</span>
+                        <span>{{ 'e-portfolio.experience.title' | trans }}</span>
                     </a>
                 </li>
                 <li>
                     <a data-scroll="events" href="#events" class="dot">
-                        <span>Events</span>
+                        <span>{{ 'e-portfolio.event.title' | trans }}</span>
                     </a>
                 </li>
                 <li>
                     <a data-scroll="competence" href="#competence" class="dot">
-                        <span>competence</span>
+                        <span>{{ 'e-portfolio.competence.title' | trans }}</span>
                     </a>
                 </li>
                 <li>
                     <a data-scroll="hobies" href="#hobies" class="dot">
-                        <span>hobies</span>
+                        <span>{{ 'e-portfolio.hobies.title' | trans }}</span>
                     </a>
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                         <div class="col-9 d-flex flex-column justify-content-center">
                             <h2 class="bg-color-txt">{{ 'e-portfolio.h1.title' | trans }}</h2>
                             <p class="text-justify">
-                                {{ 'e-portfolio.h1.description' | trans({'name': '<u>Maxime POUJOL</u>', 'age': age}) | raw }}
+                                {{ 'e-portfolio.h1.desc' | trans({'name': '<u>Maxime POUJOL</u>', 'age': age}) | raw }}
                             </p>
                             <div class="text-center">
                                 <a class="btn btn-1 mx-3 rounded-pill">{{ 'e-portfolio.h1.btn.cv' | trans }}</a>
@@ -194,19 +194,22 @@
                         <h2>{{ 'e-portfolio.event.title' | trans }}</h2>
                     </div>
                     <div>
-                        <h3 class="h4"><u>Développeur d'application</u></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
-                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                        <h3 class="h4"><u>{{ 'e-portfolio.event.nuitdelinfo.title' | trans }}</u></h3>
+                        <p class="text-justify">
+                            {{ 'e-portfolio.event.nuitdelinfo.desc1' | trans }}
+                        </p>
+                        <p class="text-justify">
+                            {{ 'e-portfolio.event.nuitdelinfo.desc2' | trans }}
+                        </p>
                     </div>
                     <div>
-                        <h3 class="h4"><u>Développeur d'application</u></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
-                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
-                    </div>
-                    <div>
-                        <h3 class="h4"><u>LP ADIPAE</u></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odit ipsam expedita
-                            dolorem.<br/> Distinctio, aliquid minima voluptatem saepe.</p>
+                        <h3 class="h4"><u>{{ 'e-portfolio.event.codegamejam.title' | trans }}</u></h3>
+                        <p class="text-justify">
+                            {{ 'e-portfolio.event.codegamejam.desc1' | trans }}
+                        </p>
+                        <p class="text-justify">
+                            {{ 'e-portfolio.event.codegamejam.desc2' | trans }}
+                        </p>
                     </div>
                 </div>
             </section>

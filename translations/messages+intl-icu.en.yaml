@@ -1,0 +1,44 @@
+e-portfolio:
+    h1:
+        title: "\n                    Welcome to my e-portfolio\n                "
+        description: "\n                    My name is {name}. I am { age } years old.\n                    Let me tell you how it all began.\n                    When I was young, I played video games on consoles such as Playstation 2, my first game console, and\n                    then Playstation 3.\n                    My father, who likes video games too, bought a gaming laptop.\n                    He told me that the laptop is better for playing and that it was the future\n                    because we can do more things.\n                    One day, he made me try his favorite games and I remember how much I loved.\n                    From that day, I bought my first desktop PC and I started to take an interest in computers,\n                    both hardware and development.\n                "
+        btn:
+            cv: __e-portfolio.h1.btn.cv
+            contact: __e-portfolio.h1.btn.contact
+    h2:
+        diplome:
+            title: __e-portfolio.h2.diplome.title
+    h3:
+        diplome:
+            subtitle: __e-portfolio.h3.diplome.subtitle
+            description: "I studied at the high school called Jean Jaurès in Saint Clément de Rivière near Montpellier,\n                    in south of France from septembre 2016 to juin 2019.\n                "
+    diplome:
+        title: __e-portfolio.diplome.title
+        college:
+            title: __e-portfolio.diplome.college.title
+            lieu: __e-portfolio.diplome.college.lieu
+            planning: __e-portfolio.diplome.college.planning
+        lycee:
+            title: __e-portfolio.diplome.lycee.title
+            lieu: __e-portfolio.diplome.lycee.lieu
+            planning: __e-portfolio.diplome.lycee.planning
+        dut:
+            title: __e-portfolio.diplome.dut.title
+            lieu: __e-portfolio.diplome.dut.lieu
+            planning: __e-portfolio.diplome.dut.planning
+        lp:
+            title: __e-portfolio.diplome.lp.title
+            lieu: __e-portfolio.diplome.lp.lieu
+            planning: __e-portfolio.diplome.lp.planning
+    event:
+        title: messages
+        nuitdelinfo: messages
+        codegamejam: messages
+    experience:
+        title: __e-portfolio.experience.title
+    competence:
+        title: __e-portfolio.competence.title
+    hobies:
+        title: __e-portfolio.hobies.title
+header:
+    home: Home

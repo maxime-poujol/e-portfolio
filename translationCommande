@@ -1,0 +1,1 @@
+php bin/console translation:extract --force --format=yaml --sort=asc --as-tree=4 en

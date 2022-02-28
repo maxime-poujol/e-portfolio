@@ -104,6 +104,18 @@
                 <source>header.home</source>
                 <target>Home</target>
             </trans-unit>
+            <trans-unit id="1">
+                <source>e-portfolio.event.title</source>
+                <target>messages</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>e-portfolio.event.nuitdelinfo</source>
+                <target>messages</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>e-portfolio.event.codegamejam</source>
+                <target>messages</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

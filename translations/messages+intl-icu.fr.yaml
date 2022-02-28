@@ -1,0 +1,44 @@
+e-portfolio:
+    h1:
+        title: 'Bienvenue sur mon e-portfolio'
+        desc: 'Mon nom est { name }. J''ai { age } ans. Laissez-moi vous raconter comment tout a commencé. Quand j''étais plus jeune, je jouais aux jeux vidéo sur des consoles telles que la Playstation 2, ma première console, puis la Playstation 3. Mon père, qui aime aussi les jeux vidéo, a acheté un ordinateur portable de jeu. Il m''a dit que l''ordinateur était mieux pour jouer et que c''était l''avenir car on peut y faire plus de choses. Un jour, il m''a fait essayer ses jeux préférés et je me souviens à quel point j''ai aimé. Depuis ce jour, j''ai acheté mon premier ordinateur de bureau et j''ai commencé à m''intéresser aux ordinateurs, tant aux matériels informatique qu''au développement.'
+        btn:
+            cv: 'Télécharger mon CV'
+            contact: 'Me contacter'
+    diplome:
+        title: 'Diplômes et Formations'
+        lycee:
+            title: 'Baccalauréat Scientifique SVT, spécialité ISN'
+            lieu: 'Lycée Jean Jaurès, Saint Clément de Rivière - Hérault(34), France'
+            planning: '{dateDebut} - {dateFin}'
+        dut:
+            title: 'Diplôme Univairsitaire de Technologie : Informatique et Gestion'
+            lieu: 'Institut Universitaire de Technologie, Montpellier - Hérault(34), France'
+            planning: '{dateDebut} - {dateFin}'
+        lp:
+            title: 'Licence Professionnelle : Assistant de Projet Informatique, Développement d’Application E-business (APIDAE)'
+            desc: __e-portfolio.diplome.lp.description
+            lieu: 'Institut Universitaire de Technologie, Montpellier - Hérault(34), France'
+            planning: '{dateDebut} - {dateFin}'
+        college:
+            title: Brevet
+            lieu: 'Collège du Pic Saint Loup, Saint Clément de Rivière - Hérault(34), France'
+            planning: '{dateDebut} - {dateFin}'
+    event:
+        title: Événements
+        nuitdelinfo:
+            title: 'La Nuit de l''Info'
+            desc1: 'La Nuit de l''Info est un événement proposé à l''IUT de Montpellier. Ses participants doivent créer un site Internet sur un thème et réaliser 5 défis, proposés par diverses entreprises, parmis un liste. Le thème est imposé au tout début et répond à un besoin spécifique. L''objectif est de respecter toutes ces contraintes dans un temps imparti d''environ 16h, début le jour x à 16h et fin le jour x+1 le matin aux alentours de 8h.'
+            desc2: 'J''ai participé à cet événement à deux reprises : la première,en décembre 2019, mon équipe et moi avons finis premier d''un défi et avons remporté 1000 euros à se partager, et la deuxième fois, en décembre 2020, nous avons terminé troisième d''un défi et avons gagné 100 euros à se partager.'
+        codegamejam:
+            title: 'Code Game Jam'
+            desc1: 'La Code Game Jam est un évènement organisé par l''IUT de Montpellier. Ses participants doivent développer un jeu vidéo sur un thème. Ce dernier est imposé au tout début. L''événement se déroule sur trois jours. Le premier, de 16h à 19h, c''est la découverte du thème et la mise en place de la stratégie de l''équipe. Le jour deux correspond au début de la programmation du jeux jusqu''au troisième jour 10h du matin non stop. A cette heure, chaque équipe présente à tour de rôle son projet dans un amphithéatre devant les autres équipes ainsi qu''un jury. Il est à savoir qu''au moment de la présentation, la majorité des participants n''ont pas dormi depuis 8h la veille.'
+            desc2: 'J''ai participé à cet événement en janvier 2020. Nous avions fait le choix de développer le jeu sur Unity.'
+    experience:
+        title: Expériences
+    competence:
+        title: Compétences
+    hobies:
+        title: Hobies
+header:
+    home: Accueil
