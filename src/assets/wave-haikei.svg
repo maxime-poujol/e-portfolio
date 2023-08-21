@@ -1,0 +1,10 @@
+<svg
+  id="visual"
+  viewBox="0 0 1000 1000"
+  width="100%"
+  height="100%"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+>
+  <path d="M0 467L30 460C60 453 120 439 180 443.3C240 447.7 300 470.3 360 458.3C420 446.3 480 399.7 540 387.3C600 375 660 397 720 399.5C780 402 840 385 870 376.5L900 368" fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke="#0066FF" stroke-width="99"></path></svg>
