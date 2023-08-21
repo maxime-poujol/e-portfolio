@@ -8,14 +8,23 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MenuComponent } from './components/menu/menu.component';
+import { StoreModule } from '@ngrx/store';
+import { MAIN_FEATURE_KEY, mainReducers } from './state/main.reducers';
 
 
 @NgModule({
   declarations: [
-    MainComponent
+    MainComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
+    StoreModule.forFeature(
+      MAIN_FEATURE_KEY,
+      mainReducers,
+      {}
+    ),
     MainRoutingModule,
     MatToolbarModule,
     MatButtonModule,
