@@ -2,8 +2,11 @@
   <a
     mat-list-item
     *ngFor="let element of menu"
-    href="#"
+    [routerLink]="element.link"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{exact:true}"
   >
-    {{element.name}}
+    <mat-icon matListItemIcon>{{element.icon}}</mat-icon>
+    <div matListItemTitle>{{element.name}}</div>
   </a>
 </mat-nav-list>

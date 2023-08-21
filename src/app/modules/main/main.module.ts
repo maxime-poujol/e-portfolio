@@ -11,12 +11,17 @@ import { MatListModule } from '@angular/material/list';
 import { MenuComponent } from './components/menu/menu.component';
 import { StoreModule } from '@ngrx/store';
 import { MAIN_FEATURE_KEY, mainReducers } from './state/main.reducers';
+import { LangageSelectorComponent } from './components/langage-selector/langage-selector.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
   declarations: [
     MainComponent,
-    MenuComponent
+    MenuComponent,
+    LangageSelectorComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +35,8 @@ import { MAIN_FEATURE_KEY, mainReducers } from './state/main.reducers';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule,
   ]
 })
 export class MainModule { }

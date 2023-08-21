@@ -1,0 +1,16 @@
+<div class="timeline">
+  <ul>
+    <li *ngFor="let item of timelineItems"  [ngStyle]="{'--accent-color': item.color}">
+      <div class="date">{{item.dateStart}} - {{item.dateEnd}}</div>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{item.jobTitle}} ({{item.companyStatus}})</mat-card-title>
+          <mat-card-subtitle>{{item.company}} - {{item.city}} {{item.postalCode}}, {{item.country}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          {{item.description}}
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
+</div>

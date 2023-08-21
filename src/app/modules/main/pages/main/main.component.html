@@ -3,7 +3,7 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Maxime POUJOL</mat-toolbar>
+    <mat-toolbar>E-portfolio</mat-toolbar>
     <app-menu [menu]="menu$ | async"></app-menu>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -16,8 +16,13 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>e-portfolio</span>
+      <div style="display: flex; justify-content: space-between; width: 100%">
+        <div>Maxime POUJOL</div>
+        <div>
+          <app-langage-selector></app-langage-selector>
+        </div>
+      </div>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

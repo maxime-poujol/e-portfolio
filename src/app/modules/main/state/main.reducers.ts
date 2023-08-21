@@ -15,8 +15,15 @@ const initialState: MainState = {
   menu: [
     {
       name: 'Home',
-      icon: null,
-      link: [''],
+      translationKey: 'HOME',
+      icon: 'home',
+      link: ['/home'],
+    },
+    {
+      name: 'Experiences',
+      translationKey: 'EXPERIENCES',
+      icon: 'work',
+      link: ['/experience']
     }
   ]
 }
