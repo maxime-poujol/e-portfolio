@@ -12,7 +12,7 @@ const randomColor = (): string => {
   return color;
 };
 
-export const experienceData = (): TimelineItem[] => [
+export const experiencesData = (): TimelineItem[] => [
   {
     color: randomColor(),
     dateStart: generateDateFormat('202210'),
