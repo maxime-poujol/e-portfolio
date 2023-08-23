@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { TimelineItem } from '../../../../shared/interfaces/timeline-item';
 
 @Component({
-  selector: 'app-experience-timeline',
-  templateUrl: './experience-timeline.component.html',
-  styleUrls: ['./experience-timeline.component.scss']
+  selector: 'app-experiences-timeline',
+  templateUrl: './experiences-timeline.component.html',
+  styleUrls: ['./experiences-timeline.component.scss']
 })
-export class ExperienceTimelineComponent {
+export class ExperiencesTimelineComponent {
 
   @Input() public timelineItems: TimelineItem[] | null | undefined;
 

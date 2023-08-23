@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  margin: 3%;
+  padding: 20px;
+  //border-radius: 2rem;
+  //background-color: cadetblue;
+
+  .img, .desc {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 2rem;
+    width: 90%;
+  }
+
+}
+
+.item:nth-child(2n) {
+  flex-direction: row-reverse;
+}

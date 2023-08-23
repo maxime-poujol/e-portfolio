@@ -23,8 +23,14 @@ const initialState: MainState = {
       name: 'Experiences',
       translationKey: 'EXPERIENCES',
       icon: 'work',
-      link: ['/experience']
-    }
+      link: ['/experiences']
+    },
+    {
+      name: 'Hobbies',
+      translationKey: 'HOBBIES',
+      icon: 'favorite_border',
+      link: ['/hobbies']
+    },
   ]
 }
 
