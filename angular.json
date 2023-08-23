@@ -4,15 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "e-portfolio": {
-      "i18n": {
-        "sourceLocale": "en",
-        "locales": {
-          "fr": {
-            "translation": "src/locale/messages.fr.json",
-            "baseHref": "fr/"
-          }
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,8 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": ["fr"],
-            "i18nMissingTranslation": "warning",
             "outputPath": "dist/e-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
