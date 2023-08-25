@@ -1,5 +1,8 @@
 {
+  "locale": "fr",
+  "translations": {
     "HOME": "accueil",
     "EXPERIENCES": "Expériences",
     "HOBBIES": "Activités"
+  }
 }
