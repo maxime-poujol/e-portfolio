@@ -6,8 +6,7 @@
     [routerLinkActive]="['active']"
     [routerLinkActiveOptions]="{exact:true}"
   >
-    <span i18n="@@test">This is a test</span>
     <mat-icon matListItemIcon>{{element.icon}}</mat-icon>
-    <div matListItemTitle i18n="@@{{element.translationKey}}">{{element.name}}</div>
+    <span matListItemTitle i18n="@@{{element.translationKey}}">{{element.name}}</span>
   </a>
 </mat-nav-list>
