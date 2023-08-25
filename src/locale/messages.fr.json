@@ -2,6 +2,7 @@
   "locale": "fr",
   "translations": {
     "HOME": "accueil",
-    "TEST": "frere"
+    "EXPERIENCES": "Expériences",
+    "HOBBIES": "Activités"
   }
 }
