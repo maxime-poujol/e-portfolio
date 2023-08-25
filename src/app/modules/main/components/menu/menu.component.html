@@ -5,6 +5,7 @@
     [routerLink]="element.link"
     [routerLinkActive]="['active']"
     [routerLinkActiveOptions]="{exact:true}"
+    i18n="@@{{element.translationKey}}"
   >
     <mat-icon matListItemIcon>{{element.icon}}</mat-icon>
     <div matListItemTitle>{{element.name}}</div>

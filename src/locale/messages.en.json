@@ -1,6 +1,8 @@
 {
   "locale": "en",
   "translations": {
-    "HOME": "home"
+    "HOME": "home",
+    "EXPERIENCES": "Experiences",
+    "HOBBIES": "Hobbies"
   }
 }
